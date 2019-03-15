@@ -1,0 +1,40 @@
+{
+  "name": "stencil-plus-minus-component",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "unpkg": "dist/ionic.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "dependencies": {
+    "@types/jest": "^24.0.9"
+  },
+  "devDependencies": {
+    "@stencil/core": "0.18.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fginioux/stencil-js-plus-minus-button.git"
+  },
+  "keywords": [
+    "webcomponent"
+  ],
+  "author": "fginioux",
+  "bugs": {
+    "url": "https://github.com/fginioux/stencil-js-plus-minus-button/issues"
+  },
+  "homepage": "https://github.com/fginioux/stencil-js-plus-minus-button#readme"
+}

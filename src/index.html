@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="/build/nuruncomponents.js"></script>
+  <script>
+    window.onload = function() {
+      const collection = document.getElementsByTagName('plus-minus-button-component');
+      if (collection.length) {
+        const el = collection[0];
+        const count = document.getElementById('count');
+
+        el.addEventListener('onChanged', (evt) => {
+          count.innerHTML = el.getCount();
+        });
+      }
+    };
+  </script>
+  <style>
+    plus-minus-button-component {
+      --button-display: inline-block;
+      --button-color: transparent;
+      --button-font-color: black;
+      --button-radius: 100%;
+      --button-width: 50px;
+      --button-height: 50px;
+      --button-font-size: 25px;
+    }
+
+    .vanilla {
+      padding: 20px 0 0 0; margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p class="vanilla">Count: <span id="count">0</span></p>
+    <plus-minus-button-component></plus-minus-button-component>
+  </div>
+
+  <div>
+    <p class="vanilla">Theme dark</p>
+    <plus-minus-button-component max="10" min="0" border="4" class="dark"></plus-minus-button-component>
+  </div>
+</body>
+</html>

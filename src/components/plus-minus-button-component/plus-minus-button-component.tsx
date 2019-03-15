@@ -81,7 +81,7 @@ export class MinusPlusButtonComponent {
 
   private _isMinReached(): boolean {
     if (this.min !== undefined) {
-      return this.min <= this._count;
+      return this._count <= this.min;
     }
 
     return true;

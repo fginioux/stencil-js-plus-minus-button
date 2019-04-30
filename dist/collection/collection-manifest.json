@@ -1,0 +1,60 @@
+{
+  "components": [
+    {
+      "tag": "plus-minus-button-component",
+      "dependencies": [],
+      "componentClass": "MinusPlusButtonComponent",
+      "componentPath": "components/plus-minus-button-component/plus-minus-button-component.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/plus-minus-button-component/plus-minus-button-component.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "border",
+          "type": "Number",
+          "attr": "border"
+        },
+        {
+          "name": "desc",
+          "type": "String",
+          "attr": "desc"
+        },
+        {
+          "name": "max",
+          "type": "Number",
+          "attr": "max"
+        },
+        {
+          "name": "min",
+          "type": "Number",
+          "attr": "min"
+        }
+      ],
+      "methods": [
+        {
+          "name": "getCount"
+        }
+      ],
+      "hostElement": {
+        "name": "host"
+      },
+      "events": [
+        {
+          "event": "onChanged"
+        }
+      ],
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.18.0",
+    "typescriptVersion": "3.3.3"
+  },
+  "bundles": []
+}

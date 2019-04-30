@@ -1,0 +1,22 @@
+:host {
+  all: initial;
+  contain: content;
+  display: block;
+}
+
+:host(.dark) button {
+  background: #000;
+  color: #fff;
+}
+
+button {
+  background: var(--button-color, pink);
+  font-family: var(--button-font);
+  font-size: var(--button-font-size, 10px);
+  color: var(--button-font-color);
+  display: var(--button-display);
+  width: var(--button-width, 20px);
+  height: var(--button-height, 20px);
+  border-radius: var(--button-radius, 0);
+  border-width: var(--button-border-width, 1px);
+}
